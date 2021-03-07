@@ -21,5 +21,6 @@ public class Book {
     private String title;
 
     @Column
+    @Builder.Default
     private String isbn = UUID.randomUUID().toString();
 }
